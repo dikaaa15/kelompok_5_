@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Anda - Tripadvisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f3f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .left-section {
+            flex: 1;
+        }
+        .hotel-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .rating {
+            color: #00a680;
+            font-size: 24px;
+        }
+        .booking-options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff3cd;
+            cursor: pointer;
+        }
+        .booking-options button:nth-child(1) {
+            background-color: #fff9e6;
+        }
+        .right-section {
+            flex: 1;
+            padding-left: 20px;
+            height: 10px;
+            width: 5px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="tripadvisor-logo.png" alt="Tripadvisor Logo" style="width: 150px;">
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="hotel-info">
+                <h1>Hotel Anda</h1>
+                <div class="rating">
+                    ★★★★☆ 3.748 <span>#5 dari 1.383 hotel</span>
+                </div>
+                <div>
+                    <input type="text" placeholder="Pilih tanggal" style="width: 100%; padding: 10px; margin: 10px 0;">
+                    <button>Penawaran langsung dari hotel</button>
+                    <button>Penawaran OTA 1</button>
+                    <button>Penawaran OTA 2</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="image-gallery">
+                <img src="living room v2.webp" alt="Hotel Exterior">
+                <p>Lihat semua foto</p>
+                <img src="hotel-image2.jpg" alt="Hotel Pool" style="width: 48%; display: inline-block;">
+                <img src="hotel-image3.jpg" alt="Hotel Room" style="width: 48%; display: inline-block;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
